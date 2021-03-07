@@ -7,3 +7,6 @@
 2. NumPy
 3. matplotlib
 4. pyecharts
+# 实现流程
+1. 更改pip源至清华源
+2. 安装模组
