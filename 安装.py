@@ -41,9 +41,9 @@ try:
     # 安装matplotlib
     pip_cmd("matplotlib")
 except:
-    print('安装失败...\n')
+    print('安装失败...')
 else:
-    print('\n------组件安装结束-------\n')
+    print('\n------组件安装结束-------')
 finally:
     # console停留
     os.system("pause")
