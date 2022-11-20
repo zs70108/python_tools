@@ -1,12 +1,21 @@
-# pymodules_install
-安装数据分析用python组件
-## 环境要求
-已安装python3.9
-## 包含模组
-1. Pandas
-2. NumPy
-3. matplotlib
-4. pyecharts
-## 实现流程
-1. 更改pip源至清华源
-2. 安装模组
+# Function
+
+```python
+class Converter(object):
+    @staticmethod
+    def to_ascii(h):
+        list_s = []
+        # "".join(h.split())
+        list_h = h.replace(" ","")
+        for i in range(0, len(list_h), 2):
+            list_s.append(chr(int(list_h[i:i+2], 16)))
+        return ''.join(list_s)
+
+    @staticmethod
+    def to_hex(s):
+        list_h = []
+        for c in s:
+            list_h.append(str(hex(ord(c))[2:]))
+            list_h.append(" ")
+        return ''.join(list_h)
+```
