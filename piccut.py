@@ -28,9 +28,9 @@ def splitimage(src, rownum, colnum, dstpath):
         print('长宽不满足切割要求!')
 
 if __name__ == '__main__':
-    src = input('图片文件：').replace('\'','')
+    src = input('图片文件：').replace('\'','').replace('\"','')
     if os.path.isfile(src):
-        dstpath = input('图片输出目录：').replace('\'','')
+        dstpath = input('图片输出目录：').replace('\'','').replace('\"','')
         if (dstpath == '') or os.path.exists(dstpath):
             row = int(input('行数：'))
             col = int(input('列数：'))

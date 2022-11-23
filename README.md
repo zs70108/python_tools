@@ -1,21 +1,14 @@
-# Function
+# python tools
 
-```python
-class Converter(object):
-    @staticmethod
-    def to_ascii(h):
-        list_s = []
-        # "".join(h.split())
-        list_h = h.replace(" ","")
-        for i in range(0, len(list_h), 2):
-            list_s.append(chr(int(list_h[i:i+2], 16)))
-        return ''.join(list_s)
+| File name              | Desc           |
+| ---------------------- | -------------- |
+| hex_ascii_converter.py | hex ascii 互转 |
+| piccut.py              | 图片等分裁切   |
+|                        |                |
+|                        |                |
+|                        |                |
+|                        |                |
+|                        |                |
+|                        |                |
+|                        |                |
 
-    @staticmethod
-    def to_hex(s):
-        list_h = []
-        for c in s:
-            list_h.append(str(hex(ord(c))[2:]))
-            list_h.append(" ")
-        return ''.join(list_h)
-```
